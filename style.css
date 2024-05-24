@@ -1,0 +1,28 @@
+*{
+    
+}
+.main-container{
+    /* max-width: au; */
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(144, 185, 144, 0), rgb(52, 173, 52));
+    
+}
+.para{
+    text-transform: capitalize;
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 90%;
+}
+.form-sub-container{
+}
+
+.btn{
+    color: azure;
+    background-color: green;
+    border: none;
+    border-radius: 0.25rem;
+}
