@@ -18,18 +18,18 @@
             <form class="form-container" action="">
                 <section class="form-sub-container">
                     <label>
-                        <p> Your Name</p>
-                        <input class="input" type="text" name="firstName" placeholder="Enter your name"/>
+                        <p> Your Name<sup>*</sup></p>
+                        <input class="input" type="text" required name="firstName" placeholder="Enter your name"/>
                     </label>
 
                     <label>
-                        <p> Your Email Address</p>
-                        <input class="input" type="email" name="email" placeholder="user@user.com"/>
+                        <p> Your Email Address<sup>*</sup></p>
+                        <input class="input" type="email" name="email" placeholder="user@user.com" required />
                     </label>
 
                     <label>
-                        <p> Your Phone Number</p>
-                        <input class="input" type="number" name="firstName" placeholder="9999999999" maxlength="10" minlength="10"/>
+                        <p> Your Phone Number<sup>*</sup></p>
+                        <input class="input" type="number" required name="firstName" placeholder="9999999999" maxlength="10" minlength="10"/>
                     </label>
 
                     <label for="location">
@@ -69,9 +69,9 @@
                     </fieldset>
                     
                     <label for="proficiency">
-                        <p>How would you rate your proficiency in coding</p>
+                        <p>How would you rate your proficiency in coding<sup>*</sup></p>
                         <label for="code-1" class="radio">
-                            <input type="radio" id="code-1" name="proficiency" value="beginner">
+                            <input type="radio" id="code-1" required name="proficiency" value="beginner">
                             Beginner
                         </label>
                         <label for="code-2" class="radio">
@@ -87,9 +87,9 @@
 
                 <section class="form-sub-container">
                     <label for="coding-contest">
-                        <p>Have you ever appered in any coding contest?</p>
+                        <p>Have you ever appered in any coding contest?<sup>*</sup></p>
                         <label for="code-1" class="radio">
-                            <input type="radio" id="code-1" name="coding-contest" value="yes">
+                            <input type="radio" id="code-1" required name="coding-contest" value="yes">
                             Yes
                         </label>
                         <label for="code-2" class="radio">

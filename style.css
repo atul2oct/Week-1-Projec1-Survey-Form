@@ -56,7 +56,9 @@ h1{
 .radio{
     display: block;
 }
-
+sup{
+    color: #EF476F;
+}
 select{
     width: 100%;
     height: 2rem;
