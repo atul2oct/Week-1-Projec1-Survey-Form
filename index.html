@@ -9,109 +9,114 @@
 </head>
 <body>
     <div class="main-container">
-        <div>
-            <h1>Survey Form</h1>
-            <p class="para">Feel Free To Answer The Questions Below On Your Own Experince and opinion. if you are not convenient in answering a particular question please skip it by answering "No". Every Answer would be very appreciated. thank you for your time</p>
+        <div class="container">
+            <div class="heading">
+                <h1>Survey Form</h1>
+                <p class="para">Feel Free To Answer The Questions Below On Your Own Experince and opinion. if you are not convenient in answering a particular question please skip it by answering "No". Every Answer would be very appreciated. thank you for your time</p>
+            </div>
+        
+            <form class="form-container" action="">
+                <div class="form-sub-container">
+                    <label>
+                        <p> Your Name</p>
+                        <input class="input" type="text" name="firstName" placeholder="Enter your name"/>
+                    </label>
+
+                    <label>
+                        <p> Your Email Address</p>
+                        <input class="input" type="email" name="email" placeholder="user@user.com"/>
+                    </label>
+
+                    <label>
+                        <p> Your Phone Number</p>
+                        <input class="input" type="number" name="firstName" placeholder="9999999999" maxlength="10" minlength="10"/>
+                    </label>
+
+                    <label for="location">
+                        <p>Where do you live?</p>
+                        <select id="location" name="location">
+                            <option value="none" selected disabled hidden>Select</option>
+                            <option value="India">India</option>
+                            <option value="China">China</option>
+                            <option value="USA">USA</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Europe">Europe</option>
+                        </select>
+                    </label>
+
+                    <fieldset>
+                        <legend>Age</legend>
+                        <label for="age-1">
+                            <input type="radio" id="age-1" name="age" value="20">
+                            15-20
+                        </label>
+                        <label for="age-2">
+                            <input type="radio" id="age-2" name="age" value="30">
+                            21-30
+                        </label>
+                        <label for="age-3">
+                            <input type="radio" id="age-3" name="age" value="30">
+                            31-40
+                        </label>
+                        <label for="age-4">
+                            <input type="radio" id="age-4" name="age" value="50">
+                            41-50
+                        </label>
+                        <label for="age-5">
+                            <input type="radio" id="age-5" name="age" value="0">
+                            Prefer not to day
+                        </label>
+                    </fieldset>
+                    
+                    <label for="proficiency">
+                        <p>How would you rate your proficiency in coding</p>
+                        <label for="code-1" class="radio">
+                            <input type="radio" id="code-1" name="proficiency" value="beginner">
+                            Beginner
+                        </label>
+                        <label for="code-2" class="radio">
+                            <input type="radio" id="code-2" name="proficiency" value="intermediate">
+                            Intermediate
+                        </label>
+                        <label for="code-3" class="radio">
+                            <input type="radio" id="code-3" name="proficiency" value="advance">
+                            Advance
+                        </label>
+                    </label>
+                </div>
+
+                <div class="form-sub-container">
+                    <label for="coding-contest">
+                        <p>Have you ever appered in any coding contest?</p>
+                        <label for="code-1" class="radio">
+                            <input type="radio" id="code-1" name="coding-contest" value="yes">
+                            Yes
+                        </label>
+                        <label for="code-2" class="radio">
+                            <input type="radio" id="code-2" name="coding-contest" value="no">
+                            No
+                        </label>
+                    </label>
+
+                    <label for="aspirations">
+                        <p>Discuss what drivesa your passion for coding and outline your aspirations in the field.</p>
+                        <textarea id="aspirations" name="aspirations" rows="4" cols="50"></textarea>
+                    </label>
+
+                    <label for="chanllenges">
+                        <p>What are some of the challenges you face while coding?</p>
+                        <textarea id="chanllenges" name="chanllenges" rows="4" cols="50"></textarea>
+                    </label>
+
+                    <label for="Data-Structures">
+                        <p>Plesae list the Data Strusctures you have a  strong understanding of.</p>
+                        <textarea id="Data-Structures" name="Data-Structures" rows="4" cols="50"></textarea>
+                    </label>    
+                    
+                    <button type="submit" class="btn">Submit Form</button>
+                </div>
+            </form>
         </div>
-        <form class="form-container" action="">
-            <div class="form-sub-container">
-                <label>
-                    <p> Your Name</p>
-                    <input type="text" name="firstName" placeholder="Enter your name"/>
-                </label>
-
-                <label>
-                    <p> Your Email Address</p>
-                    <input type="email" name="email" placeholder="user@user.com"/>
-                </label>
-
-                <label>
-                    <p> Your Phone Number</p>
-                    <input type="number" name="firstName" placeholder="9999999999"/>
-                </label>
-
-                <label for="location">
-                    <p>Where do you live?</p>
-                    <select id="location" name="location">
-                        <option value="India">India</option>
-                        <option value="China">China</option>
-                        <option value="USA">USA</option>
-                        <option value="Russia">Russia</option>
-                        <option value="Europe">Europe</option>
-                    </select>
-                </label>
-
-                <fieldset>
-                    <legend>Age</legend>
-                    <label for="age-1">
-                        <input type="radio" id="age-1" name="age" value="20">
-                        15-20
-                    </label>
-                    <label for="age-2">
-                        <input type="radio" id="age-2" name="age" value="30">
-                        21-30
-                    </label>
-                    <label for="age-3">
-                        <input type="radio" id="age-3" name="age" value="30">
-                        31-40
-                    </label>
-                    <label for="age-4">
-                        <input type="radio" id="age-4" name="age" value="50">
-                        41-50
-                    </label>
-                    <label for="age-5">
-                        <input type="radio" id="age-5" name="age" value="0">
-                        Prefer not to day
-                    </label>
-                </fieldset>
-                <label for="proficiency">
-                    <p>How would you rate your proficiency in coding</p>
-                    <label for="code-1">
-                        <input type="radio" id="code-1" name="proficiency" value="beginner">
-                        Beginner
-                    </label>
-                    <label for="code-2">
-                        <input type="radio" id="code-2" name="proficiency" value="intermediate">
-                        Intermediate
-                    </label>
-                    <label for="code-3">
-                        <input type="radio" id="code-3" name="proficiency" value="advance">
-                        Advance
-                    </label>
-                </label>
-            </div>
-
-            <div class="form-sub-container">
-                <label for="coding-contest">
-                    <p>Have you ever appered in any coding contest?</p>
-                    <label for="code-1">
-                        <input type="radio" id="code-1" name="coding-contest" value="yes">
-                        Yes
-                    </label>
-                    <label for="code-2">
-                        <input type="radio" id="code-2" name="coding-contest" value="no">
-                        No
-                    </label>
-                </label>
-
-                <label for="aspirations">
-                    <p>Discuss what drivesa your passion for coding and outline your aspirations in the field.</p>
-                    <textarea id="aspirations" name="aspirations" rows="4" cols="50"></textarea>
-                </label>
-
-                <label for="chanllenges">
-                    <p>What are some of the challenges you face while coding?</p>
-                    <textarea id="chanllenges" name="chanllenges" rows="4" cols="50"></textarea>
-                </label>
-
-                <label for="Data-Structures">
-                    <p>Plesae list the Data Strusctures you have a  strong understanding of.</p>
-                    <textarea id="Data-Structures" name="Data-Structures" rows="4" cols="50"></textarea>
-                </label>    
-                
-                <button type="submit" class="btn">Submit Form</button>
-            </div>
-        </form>
     </div>
     
 </body>

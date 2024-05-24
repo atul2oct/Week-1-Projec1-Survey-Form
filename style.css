@@ -1,11 +1,35 @@
-*{
-    
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #afb2bf;
+}
+body{
+    margin: 0;    
 }
 .main-container{
-    /* max-width: au; */
-    padding: 20px;
-    background-image: linear-gradient(to bottom, rgba(144, 185, 144, 0), rgb(52, 173, 52));
-    
+    overflow-y: auto;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(144, 185, 144, 0), rgb(52, 173, 52));    
+    display: flex;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 95%;
+    min-height: max-content;
+    margin: 2rem auto;
+    border-radius: 0.25rem;
+    padding-bottom: 2rem;
+}
+.heading{
+    padding: 0rem 2rem;
+}
+h1{
+    color: rgb(37, 145, 37);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 .para{
     text-transform: capitalize;
@@ -14,13 +38,61 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
-    height: 90%;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    min-height: max-content;
+    padding: 0rem 2rem;    
 }
 .form-sub-container{
+    display: flex;
+    flex-direction: column;
+}
+.radio{
+    display: block;
+}
+
+select{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.185);
+    border-radius: 0.25rem;
+    padding: 0 1rem;
+}
+
+.input{
+    width: 90%;
+    height: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.185);
+    border-radius: 0.25rem;
+    padding: 0 1rem;
+    flex: 1 2 auto;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 15%;
+}
+
+::placeholder{
+    padding: 0 0.25rem;
+    color: rgb(37, 145, 37);
+}
+
+label{
+    font-size: medium;
+    font-weight: bold;
+}
+
+textarea{
+    resize: vertical;
 }
 
 .btn{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
     color: azure;
     background-color: green;
     border: none;
